@@ -16,6 +16,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    _manager = [[Manager alloc] init];
+    
     // Override point for customization after application launch.
     return YES;
 }

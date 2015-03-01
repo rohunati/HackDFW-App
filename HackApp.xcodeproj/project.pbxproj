@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		925260FF1AA2E23C005ACC76 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 925260FE1AA2E23C005ACC76 /* SettingsTableViewController.m */; };
 		928F92DE1AA29EE3002638AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 928F92DD1AA29EE3002638AB /* main.m */; };
 		928F92E11AA29EE3002638AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 928F92E01AA29EE3002638AB /* AppDelegate.m */; };
 		928F92E41AA29EE3002638AB /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 928F92E31AA29EE3002638AB /* FirstViewController.m */; };
@@ -15,6 +16,7 @@
 		928F92EC1AA29EE3002638AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 928F92EB1AA29EE3002638AB /* Images.xcassets */; };
 		928F92EF1AA29EE3002638AB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 928F92ED1AA29EE3002638AB /* LaunchScreen.xib */; };
 		928F92FB1AA29EE3002638AB /* HackAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 928F92FA1AA29EE3002638AB /* HackAppTests.m */; };
+		92CEE8011AA3057500675851 /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CEE8001AA3057500675851 /* Manager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		925260FD1AA2E23C005ACC76 /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
+		925260FE1AA2E23C005ACC76 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
 		928F92D81AA29EE2002638AB /* HackApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		928F92DC1AA29EE3002638AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		928F92DD1AA29EE3002638AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -43,6 +47,8 @@
 		928F92F41AA29EE3002638AB /* HackAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		928F92F91AA29EE3002638AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		928F92FA1AA29EE3002638AB /* HackAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HackAppTests.m; sourceTree = "<group>"; };
+		92CEE7FF1AA3057500675851 /* Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Manager.h; sourceTree = "<group>"; };
+		92CEE8001AA3057500675851 /* Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Manager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +96,10 @@
 				928F92E31AA29EE3002638AB /* FirstViewController.m */,
 				928F92E51AA29EE3002638AB /* SecondViewController.h */,
 				928F92E61AA29EE3002638AB /* SecondViewController.m */,
+				925260FD1AA2E23C005ACC76 /* SettingsTableViewController.h */,
+				925260FE1AA2E23C005ACC76 /* SettingsTableViewController.m */,
+				92CEE7FF1AA3057500675851 /* Manager.h */,
+				92CEE8001AA3057500675851 /* Manager.m */,
 				928F92E81AA29EE3002638AB /* Main.storyboard */,
 				928F92EB1AA29EE3002638AB /* Images.xcassets */,
 				928F92ED1AA29EE3002638AB /* LaunchScreen.xib */,
@@ -173,6 +183,7 @@
 				TargetAttributes = {
 					928F92D71AA29EE2002638AB = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = W58GK2Y768;
 					};
 					928F92F31AA29EE3002638AB = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -225,7 +236,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				928F92E71AA29EE3002638AB /* SecondViewController.m in Sources */,
+				92CEE8011AA3057500675851 /* Manager.m in Sources */,
 				928F92E11AA29EE3002638AB /* AppDelegate.m in Sources */,
+				925260FF1AA2E23C005ACC76 /* SettingsTableViewController.m in Sources */,
 				928F92E41AA29EE3002638AB /* FirstViewController.m in Sources */,
 				928F92DE1AA29EE3002638AB /* main.m in Sources */,
 			);
@@ -351,9 +364,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = HackApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -361,9 +378,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = HackApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -420,6 +441,7 @@
 				928F93001AA29EE3002638AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		928F93011AA29EE3002638AB /* Build configuration list for PBXNativeTarget "HackAppTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +450,7 @@
 				928F93031AA29EE3002638AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
